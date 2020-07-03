@@ -6,7 +6,12 @@
 import scrapy
 
 
-class ProjectItem(scrapy.Item):
+class ArtscrapItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    summary = scrapy.Field()
+    tags = scrapy.Field()
+    url = scrapy.Field()
+    header = scrapy.Field()
+    body = scrapy.Field()
