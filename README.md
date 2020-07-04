@@ -22,7 +22,7 @@ this is an api that collects  articles from BBC.com using scrapy and stores it i
 ## Run 
 - to run the crawler execute command 
 ```bash
-cd BBc_crawler
+cd Bbc_crawler
 scrapy crawl bbc
 ```
 this application uses DeltaFetch librery to avoid re-storing already stored articles
