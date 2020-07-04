@@ -15,10 +15,10 @@ this is an api that collects  articles from BBC.com using scrapy and stores it i
 - Rest_API/ holds an implementation of search REST API, for BBC News Crawler.
     - the search API  gets the data from the mongodb Database 
     - four  search APIs are implemanted :
-        1 - to fetch all the article news in the database  : http://127.0.0.1:5000/news
-        2 - to fetch all the articles related to given keyword in tags : http://127.0.0.1:5000/tags/<keyword>
-        3 - to fetch all the articles related to given keyword in body : http://127.0.0.1:5000/body/<keyword>
-        4 - to fetch all the articles related to given keyword in heading : http://127.0.0.1:5000/header/<keyword>
+        1. to fetch all the article news in the database  : http://127.0.0.1:5000/news
+        2. to fetch all the articles related to given keyword in tags : http://127.0.0.1:5000/tags/<keyword>
+        3. to fetch all the articles related to given keyword in body : http://127.0.0.1:5000/body/<keyword>
+        4. to fetch all the articles related to given keyword in heading : http://127.0.0.1:5000/header/<keyword>
 ## Run 
 - to run the crawler execute command 
 ```bash
