@@ -2,7 +2,7 @@
 this is an api that collects  articles from BBC.com using scrapy and stores it in Mongodb atlas
 ## Description
 - this application crawls news Articles from BBC.com using [scrapy](https://www.scrapy.org)
-- it cleans the articles to obtain only information relevant to the news story, e.g.title,summary,  headline,articles text, article url.
+- it cleans the articles to obtain only information relevant to the news story, e.g.title ,author ,summary,  headline,articles text, article url.
 - it store the data in a hosted Mongo database, [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), for subsequent search and retrieval. 
 - Search REST APIs are provided  to be able to access the content in the mongo database.
     - using the Rest API ths user can search for :
