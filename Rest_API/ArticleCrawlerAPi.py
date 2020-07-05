@@ -14,7 +14,7 @@ def toJson(data):
     """Convert Mongo object(s) to JSON"""
     return json.dumps(data, default=json_util.default)
 
-class NewsMeta(Resource):
+class AllArticles(Resource):
     def get(self):
         '''
         DESCRIPTION:
@@ -78,7 +78,7 @@ class SearchTagsKeyword(Resource):
 api.add_resource(SearchHeaderKeyword, '/header/<string:keyword>')
 api.add_resource(SearchBodyKeyword, '/body/<string:keyword>')
 api.add_resource(SearchTagsKeyword, '/tags/<string:keyword>')
-api.add_resource(NewsMeta, '/news')
+api.add_resource(AllArticles, '/news')
 
 if __name__ == '__main__':
     app.run()

@@ -41,8 +41,6 @@ class ArticleSpider(CrawlSpider):
       -----------
       * This function is called for parsing every URL encountered,
         starting from 'start_urls'.
-      * In this function required information is fetched from
-        the web page and stored in Item object.
       PARAMETERS:
       ----------
       1. response object of Web page.
@@ -65,8 +63,6 @@ class ArticleSpider(CrawlSpider):
       -----------
       * This function is called for crwling info from artcils URL,
         '.
-      * In this function required information is fetched from
-        the web page and stored in Item object.
       PARAMETERS:
       ----------
       1. response object of Web page.
