@@ -15,3 +15,4 @@ class ArtscrapItem(scrapy.Item):
     url = scrapy.Field()
     header = scrapy.Field()
     body = scrapy.Field()
+    author = scrapy.Field()

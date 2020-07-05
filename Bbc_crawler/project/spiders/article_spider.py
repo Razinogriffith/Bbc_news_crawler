@@ -71,6 +71,10 @@ class ArticleSpider(CrawlSpider):
       item["header"] = self.get_first(response.xpath("//" + self.xpath_for_class("story-body__h1") + "/text()").extract(), "").strip(' \n')
       body_list = response.xpath("//" + self.xpath_for_class("story-body__inner") + "//p/text()").extract()
       item["body"] = ' '.join(body_list).strip(' \n')
+      author = self.get_first(response.xpath("//meta[@property='article:author']/@content").extract(),'')
+      if author is '' :
+        author = self.get_first(response.xpath( "//meta[@name='author']/@content").extract(),'')
+      item['author'] = author
       yield item
         
 
