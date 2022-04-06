@@ -36,7 +36,7 @@ scrapy-deltafetch==1.2.1
 service-identity==18.1.0
 six==1.15.0
 sqlparse==0.3.1
-Twisted==20.3.0
+Twisted==22.2.0
 w3lib==1.22.0
 Werkzeug==1.0.1
 zope.interface==5.1.0
